@@ -84,6 +84,8 @@ namespace CsPrimitiveTypesAndExpressions
             int number5 = 2;
             Console.WriteLine(number5);
 
+            // Format strings can be used with {n} as placeholder :
+            Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
         }
     }
 }
