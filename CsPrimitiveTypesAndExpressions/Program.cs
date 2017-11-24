@@ -6,6 +6,10 @@ namespace CsPrimitiveTypesAndExpressions
     {
         static void Main(string[] args)
         {
+            //**************************
+            // Variables and Constants
+            //**************************
+
             // Identifiers in C# cannot start with a number, nor include a whitespace.
             // An identifer cannot be a reserved keyword. If necessary it can be prefixed with an "@".
 
@@ -31,6 +35,10 @@ namespace CsPrimitiveTypesAndExpressions
             // f for float, m for decimal
             const float Pi = 3.14f;
 
+            //********************
+            // Overflowing
+            //********************
+
             // In C# overflowing will bring the variable to its lowest possible value. 
             byte number3 = 255;
             number3++; // overflow, number3 wilkl contain zero
@@ -41,6 +49,29 @@ namespace CsPrimitiveTypesAndExpressions
                 byte number4 = 255;
                 number4++; // overflow, an exception is thrown
             }
+
+            //********************
+            // Scope
+            //********************
+            // In C#, blocks are indicated with {}
+            // A variable's scope is limited to the block in which it is defined.
+            {
+                byte a = 1;
+                // Here a is accessible
+                {
+                    byte b = 2;
+                    // Here a and b are accessible
+                    {
+                        byte c = 3;
+                        // Here a, b and c are accessible
+                    }
+                    // Here c is no longer accessible
+                }
+                // Here b is no longer accessible
+            }
+            // Here a is no longer accessible
+
+
 
         }
     }
