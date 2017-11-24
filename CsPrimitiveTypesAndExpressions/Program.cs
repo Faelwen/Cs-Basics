@@ -35,6 +35,10 @@ namespace CsPrimitiveTypesAndExpressions
             // f for float, m for decimal
             const float Pi = 3.14f;
 
+            // Instead of specifying a type, var can be used. C# will automatically guess the proper type from the initial value :
+            var isTrue = true;   // isTrue will be automatically declared as a boolean
+            var character = 'C'; // character will automatically be declared as a char
+
             //********************
             // Overflowing
             //********************
