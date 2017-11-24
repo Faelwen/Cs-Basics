@@ -10,6 +10,7 @@ namespace CsPrimitiveTypesAndExpressions
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
