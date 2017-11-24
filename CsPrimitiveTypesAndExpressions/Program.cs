@@ -71,7 +71,14 @@ namespace CsPrimitiveTypesAndExpressions
             }
             // Here a is no longer accessible
 
-
+            //********************
+            // Write to console
+            //********************
+            // Writing to console can be done with Console.WriteLine()
+            // In Visual Studio it can written very quickly with the code snipet cw (type "cw" then double tab)
+            //
+            int number5 = 2;
+            Console.WriteLine(number5);
 
         }
     }
