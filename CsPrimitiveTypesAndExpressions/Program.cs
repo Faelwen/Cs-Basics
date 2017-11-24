@@ -30,6 +30,18 @@ namespace CsPrimitiveTypesAndExpressions
             // In C#, double is the default for real numbers, so values that are float or decimal must be suffixed to explicitly specify the format.
             // f for float, m for decimal
             const float Pi = 3.14f;
+
+            // In C# overflowing will bring the variable to its lowest possible value. 
+            byte number3 = 255;
+            number3++; // overflow, number3 wilkl contain zero
+
+            // By default C# doesn't check overflows. The checked keyword can be used for that purpose:
+            checked
+            {
+                byte number4 = 255;
+                number4++; // overflow, an exception is thrown
+            }
+
         }
     }
 }
