@@ -188,8 +188,17 @@ namespace CsPrimitiveTypesAndExpressions
             person.Name = "";
             person.Introduce();
         }
+    }
 
-        
-
+    //********************
+    // Structs 
+    //********************
+    //
+    // Declaring a struct is like a class :
+    public struct Structure
+    {
+        public int x;
+        public int y;
+        public int z;
     }
 }
