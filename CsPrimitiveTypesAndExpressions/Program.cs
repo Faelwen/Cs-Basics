@@ -86,6 +86,33 @@ namespace CsPrimitiveTypesAndExpressions
 
             // Format strings can be used with {n} as placeholder :
             Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
+
+            //********************
+            // Type conversion 
+            //********************
+            //
+            // Type conversion can be implicit when conversion between types is easy.
+            // For instance, a byte can be easily converted into an int :
+            byte b2 = 1;
+            int i = b2;
+
+            //... or an int to a float
+            int i2 = 1;
+            float f = i2;
+
+            // However an int cannot be conveted to a byte implicitly
+            // Neither can a float to an int
+            // In these cases, conversion can be done by casting :
+            int i3 = 1;
+            byte b3 = (byte)i3;
+
+            float f2 = 1.0f;
+            int i4 = (int)f2;
+
+            // In cases where data-types are not directly compatible, such as int and string, there are various special functions that can do the conversion :
+            string s = "1";
+            int j = Convert.ToInt32(s); // one possibility
+            int k = int.Parse(s);       // another possibility
         }
     }
 }
