@@ -7,6 +7,13 @@ namespace CsPrimitiveTypesAndExpressions
         static void Main(string[] args)
         {
             //**************************
+            // Comments
+            //**************************
+            // Comments in C# an be :
+            //  single-line (//)
+            //  multi-line  (/* */)
+
+            //**************************
             // Variables and Constants
             //**************************
 
@@ -149,6 +156,40 @@ namespace CsPrimitiveTypesAndExpressions
             // Bitwise operators :
             //  And : &
             //  Or  : |
+
         }
+    }
+
+    //********************
+    // Classes 
+    //********************
+    //
+    // Declaring a class :
+
+    public class Person
+    {
+        //declare class variables
+        public string Name;
+
+        //declare class methods:
+        public void Introduce()
+        {
+            Console.WriteLine("Hi, my name is " + Name);
+        }
+
+
+        // adding the static keyword when declaring a method allows to access it without having to create an instance of an object.
+        static void TestClass()
+        {
+            // to creating an object from a class, use the new keyword :
+            Person person = new Person();
+
+            // Call variable or property of an objct : use dot
+            person.Name = "";
+            person.Introduce();
+        }
+
+        
+
     }
 }
