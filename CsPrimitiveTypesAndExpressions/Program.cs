@@ -157,6 +157,19 @@ namespace CsPrimitiveTypesAndExpressions
             //  And : &
             //  Or  : |
 
+
+            //********************
+            // Arrays 
+            //********************
+            // Declare an array :
+            int[] numbers = new int[3]; // elements are initialised at 0 by default
+
+            // Assign or access specific items in an array by index :
+            numbers[0] = 2; // in C#, first element of an array is indexed at 0
+            numbers[1] = 5;
+
+            // Assign at declaration:
+            int[] numbers2 = new int[3] { 1, 2, 3 };
         }
     }
 
