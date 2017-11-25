@@ -170,6 +170,28 @@ namespace CsPrimitiveTypesAndExpressions
 
             // Assign at declaration:
             int[] numbers2 = new int[3] { 1, 2, 3 };
+
+
+            //********************
+            // Strings 
+            //********************
+            //
+            // Declare a string :
+            string firstName = "qdfdsf";
+            string lastName = "dgqrehg";
+
+            // Concatenation :
+            string name = firstName + " " + lastName;
+
+            // String format :
+            string name2 = string.Format("{0} {1}", firstName, lastName);
+
+            // Join string from array :
+            string list = string.Join(",", numbers);
+
+            // Escape characters : \n, \t, \\, \' and \"
+            // Escape characters can be avoided using a verbatim string using a @ :
+            string path = @"C:\users\folder";
         }
     }
 
