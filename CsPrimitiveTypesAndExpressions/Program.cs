@@ -113,6 +113,42 @@ namespace CsPrimitiveTypesAndExpressions
             string s = "1";
             int j = Convert.ToInt32(s); // one possibility
             int k = int.Parse(s);       // another possibility
+
+            //********************
+            // Operators 
+            //********************
+            // Arthmetic operators :
+            //  Add       : +
+            //  Subtract  : - 
+            //  Multiply  : *
+            //  Divide    : /
+            //  Remainder : %
+            //  Increment : ++
+            //  Decrement : --
+            //
+            // Comparaison operators :
+            //  Equal                    : ==
+            //  Not Equal                : !=
+            //  Greater than             : >
+            //  Greater than or equal to : >=
+            //  Less than                : <
+            //  Less than or equal to    : <=
+            //
+            // Assignment operators :
+            //  Assign         : =
+            //  Addition       : +=
+            //  Subtraction    : -=
+            //  Multiplication : *=
+            //  Division       : /=
+            //
+            // Logical operators :
+            //  And : &&
+            //  Or  : ||
+            //  Not : !
+            //
+            // Bitwise operators :
+            //  And : &
+            //  Or  : |
         }
     }
 }
