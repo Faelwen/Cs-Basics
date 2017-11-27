@@ -192,6 +192,7 @@ namespace CsPrimitiveTypesAndExpressions
             // Escape characters : \n, \t, \\, \' and \"
             // Escape characters can be avoided using a verbatim string using a @ :
             string path = @"C:\users\folder";
+
         }
     }
 
@@ -235,5 +236,18 @@ namespace CsPrimitiveTypesAndExpressions
         public int x;
         public int y;
         public int z;
+    }
+
+    //********************
+    // Enums 
+    //********************
+    //
+    // Declare an enum : (int is default)
+    // (if no values are given, the first element is set to zero, and further elements are incremented)
+    public enum Enumeration : int
+    {
+        num1 = 1,
+        num2 = 2,
+        num3 = 3
     }
 }
