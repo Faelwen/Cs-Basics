@@ -193,6 +193,19 @@ namespace CsPrimitiveTypesAndExpressions
             // Escape characters can be avoided using a verbatim string using a @ :
             string path = @"C:\users\folder";
 
+
+            //********************
+            // Value and Reference types 
+            //********************
+            // Value types, such as int, are copied to a new place in memory when duplicated
+            int x = 1;
+            int y = x;  // x is copied in y
+            y++; // x==1, y==2
+
+            // In the case of reference types, such as arrays, the variable isn't copied, instead a reference to the original value is created
+            int[] array1 = new int[3] { 1, 2, 3 };
+            int[] array2 = array1; // array2 is a reference to array1
+            array2[0] = 0; // this also changes array1[0]
         }
     }
 
